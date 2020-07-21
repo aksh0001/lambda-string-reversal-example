@@ -20,7 +20,7 @@ public class StringReversalLambdaHandler implements RequestHandler<Map<String, S
         logger.log("EVENT TYPE: " + event.getClass().toString());
 
         String reversedStr1 = reverseString(event.get("message1"));
-        String reversedStr2 = reverseString(event.get("msg2"));
+        String reversedStr2 = reverseString(event.get("message2"));
 
         response = String.format("{message1: %s, message2: %s}", reversedStr1, reversedStr2);
 
